@@ -51,11 +51,11 @@ body {
 
 @keyframes agents-background-gradient-rotate {
   from {
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
   }
 
   to {
-    transform: rotate(20deg);
+    transform: rotate(15deg);
   }
 }
 
