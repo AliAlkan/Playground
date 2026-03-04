@@ -10,6 +10,7 @@
 
 .agents-main-scroll::-webkit-scrollbar {
   width: 14px;
+  height: 14px;
 }
 
 .agents-main-scroll::-webkit-scrollbar-track {
@@ -24,34 +25,6 @@
 }
 
 .agents-background-gradient {
-  animation: agents-gradient-drift 18s ease-in-out infinite alternate;
   opacity: 0.88;
   pointer-events: none;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-
-@keyframes agents-gradient-drift {
-  0% {
-    opacity: 0.82;
-    transform: translate3d(20px, -4px, 0) scale(0.985) rotate(-2deg);
-  }
-
-  50% {
-    opacity: 0.92;
-    transform: translate3d(2px, 12px, 0) scale(1.02) rotate(0deg);
-  }
-
-  100% {
-    opacity: 0.84;
-    transform: translate3d(-22px, 6px, 0) scale(1.035) rotate(2deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .agents-background-gradient {
-    animation: none;
-    opacity: 0.88;
-    transform: none;
-  }
 }

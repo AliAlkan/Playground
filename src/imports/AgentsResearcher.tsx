@@ -1,3 +1,6 @@
+import { useLayoutEffect, useRef, useState } from "react";
+
+import eclipseFullUrl from "../assets/eclipse-full.svg";
 import svgPaths from "./svg-2wacbqcxt8";
 
 function Layer() {
@@ -684,26 +687,12 @@ function Frame108() {
 
 function Gradient() {
   return (
-    <div className="agents-background-gradient absolute left-[-315px] size-[820px] top-[-810px]" data-name="Gradient">
-      <div className="absolute inset-[-24.39%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1220 1220">
-          <g id="Gradient">
-            <g filter="url(#filter0_f_1_1141)" id="Eclipse">
-              <circle cx="610" cy="610" fill="url(#paint0_linear_1_1141)" r="410" transform="rotate(-90 610 610)" />
-            </g>
-          </g>
-          <defs>
-            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1220" id="filter0_f_1_1141" width="1220" x="2.66288e-06" y="-2.66288e-06">
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-              <feGaussianBlur result="effect1_foregroundBlur_1_1141" stdDeviation="100" />
-            </filter>
-            <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1_1141" x1="610" x2="610" y1="200" y2="1020">
-              <stop stopColor="#00C2FF" stopOpacity="0" />
-              <stop offset="1" stopColor="#ED29FF" />
-            </linearGradient>
-          </defs>
-        </svg>
+    <div
+      className="agents-background-gradient absolute left-[-315px] size-[820px] top-[-770px] pointer-events-none select-none"
+      data-name="Gradient"
+    >
+      <div className="absolute inset-[-24.39%]" style={{ transform: "rotate(-30deg)" }}>
+        <img alt="" className="block max-w-none size-full" src={eclipseFullUrl} />
       </div>
     </div>
   );
@@ -711,7 +700,7 @@ function Gradient() {
 
 function Frame109() {
   return (
-    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[12px] shrink-0 to-[#0a0a0a] w-full">
+    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[20px] shrink-0 to-[#0a0a0a] w-full">
       <Gradient />
     </div>
   );
@@ -725,13 +714,42 @@ function Background() {
   );
 }
 
-function Frame2() {
+function AutoResizeTextarea({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const resizeTextarea = (textarea: HTMLTextAreaElement) => {
+    textarea.style.height = "0px";
+    textarea.style.height = `${Math.max(textarea.scrollHeight, 86)}px`;
+  };
+
+  useLayoutEffect(() => {
+    if (textareaRef.current) {
+      resizeTextarea(textareaRef.current);
+    }
+  }, []);
+
   return (
-    <div className="h-[114px] relative shrink-0 w-full">
-      <div className="content-stretch flex flex-col items-start px-[20px] py-[14px] relative size-full">
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[28px] relative shrink-0 text-[#737373] text-[16px] w-full" style={{ fontVariationSettings: "'wdth' 100" }}>
-          What do you want to research? (e.g. A literature review on retrieval-augmented generation for medical QA, focusing on evaluation methods and failure modes).
-        </p>
+    <textarea
+      ref={textareaRef}
+      aria-label="Research topic"
+      className="bg-transparent border-0 font-['SF_Pro:Regular',sans-serif] font-normal leading-[28px] outline-none overflow-hidden p-0 resize-none text-[#fafafa] text-[16px] w-full min-h-[86px] placeholder:text-[#737373]"
+      onChange={(event) => {
+        onChange(event.currentTarget.value);
+        resizeTextarea(event.currentTarget);
+      }}
+      placeholder="What do you want to research? (e.g. A literature review on retrieval-augmented generation for medical QA, focusing on evaluation methods and failure modes)."
+      rows={1}
+      value={value}
+      style={{ fontVariationSettings: "'wdth' 100" }}
+    />
+  );
+}
+
+function Frame2({ prompt, onPromptChange }: { prompt: string; onPromptChange: (value: string) => void }) {
+  return (
+    <div className="min-h-[114px] relative shrink-0 w-full">
+      <div className="content-stretch flex flex-col items-start px-[20px] py-[14px] relative w-full">
+        <AutoResizeTextarea onChange={onPromptChange} value={prompt} />
       </div>
     </div>
   );
@@ -915,20 +933,30 @@ function Frame105() {
   );
 }
 
-function Frame104() {
+function Frame104({ isActive }: { isActive: boolean }) {
   return (
     <div className="content-stretch flex h-full items-center relative shrink-0">
-      <div className="bg-[#262626] content-stretch flex gap-[8px] h-[40px] items-center justify-center px-[20px] py-[8px] relative rounded-[9999px] shrink-0" data-name="Button">
+      <div
+        className="content-stretch flex gap-[8px] h-[40px] items-center justify-center px-[20px] py-[8px] relative rounded-[9999px] shrink-0 transition-[background-color] duration-200"
+        data-name="Button"
+        style={{
+          backgroundColor: isActive ? "#932794" : "#262626",
+          backgroundImage: "none",
+        }}
+      >
         <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / Play">
           <div className="absolute bottom-[12.5%] left-1/4 right-[16.67%] top-[12.5%]" data-name="Vector">
             <div className="absolute inset-[-5.54%_-7.12%_-5.54%_-7.13%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.6633 13.33">
-                <path d={svgPaths.p1ab67b80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1ab67b80} id="Vector" stroke={isActive ? "#FAFAFA" : "#A3A3A3"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </svg>
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#a3a3a3] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <div
+          className="flex flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] whitespace-nowrap transition-colors duration-200"
+          style={{ color: isActive ? "#fafafa" : "#a3a3a3", fontVariationSettings: "'wdth' 100" }}
+        >
           <p className="leading-[20px]">Start a run</p>
         </div>
       </div>
@@ -936,14 +964,14 @@ function Frame104() {
   );
 }
 
-function Footer() {
+function Footer({ isRunReady }: { isRunReady: boolean }) {
   return (
     <div className="relative shrink-0 w-full" data-name="Footer">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center justify-between pb-[16px] px-[20px] relative w-full">
           <Frame105 />
           <div className="flex flex-row items-center self-stretch">
-            <Frame104 />
+            <Frame104 isActive={isRunReady} />
           </div>
         </div>
       </div>
@@ -952,11 +980,16 @@ function Footer() {
 }
 
 function Frame1() {
+  const [prompt, setPrompt] = useState("");
+  const isRunReady = prompt.trim().length > 0;
+
   return (
-    <div className="bg-[#171717] content-stretch flex flex-col items-start relative rounded-[20px] shrink-0 w-[896px]">
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[20px]" />
-      <Frame2 />
-      <Footer />
+    <div className="agents-composer group bg-[#171717] content-stretch flex flex-col items-start relative rounded-[20px] shrink-0 w-[896px]">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[20px] z-10">
+        <div className="absolute border border-[#262626] border-solid inset-0 rounded-[20px] transition-colors duration-200 group-hover:border-[#323232] group-focus-within:border-[#323232]" />
+      </div>
+      <Frame2 onPromptChange={setPrompt} prompt={prompt} />
+      <Footer isRunReady={isRunReady} />
     </div>
   );
 }
