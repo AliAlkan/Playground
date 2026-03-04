@@ -1,7 +1,11 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { type CSSProperties, useLayoutEffect, useRef, useState } from "react";
 
 import eclipseFullUrl from "../assets/eclipse-full.svg";
 import svgPaths from "./svg-2wacbqcxt8";
+
+const outlinedCommandTriggerStyle = {
+  "--outlined-command-trigger-color": "#262626",
+} as CSSProperties;
 
 function Layer() {
   return (
@@ -90,7 +94,7 @@ function Frame99() {
 function Frame102() {
   return (
     <div className="content-stretch flex h-[36px] items-center justify-center px-[16px] relative rounded-[9999px] shrink-0">
-      <p className="font-['Jost:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">DASHBOARD</p>
+      <p className="font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">DASHBOARD</p>
     </div>
   );
 }
@@ -98,7 +102,7 @@ function Frame102() {
 function Frame101() {
   return (
     <div className="content-stretch flex h-[36px] items-center justify-center px-[16px] relative rounded-[9999px] shrink-0">
-      <p className="font-['Jost:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">APP STORE</p>
+      <p className="font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">APP STORE</p>
     </div>
   );
 }
@@ -129,7 +133,7 @@ function ContentWrapper() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">New chat</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">New chat</p>
             </div>
           </div>
         </div>
@@ -162,7 +166,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Chats</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Chats</p>
             </div>
           </div>
         </div>
@@ -178,7 +182,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Quick Agents</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Quick Agents</p>
             </div>
           </div>
         </div>
@@ -194,7 +198,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#d75cdb] text-[15px] whitespace-nowrap">Agents</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#d75cdb] text-[15px] whitespace-nowrap">Agents</p>
             </div>
           </div>
         </div>
@@ -210,7 +214,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Knowledge</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Knowledge</p>
             </div>
           </div>
         </div>
@@ -224,7 +228,7 @@ function ContentWrapper1() {
               </div>
             </div>
           </div>
-          <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Personas</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Personas</p>
         </div>
         <div className="relative rounded-[8px] shrink-0 w-full" data-name="Blocks / Sidebar Item">
           <div className="flex flex-row items-center size-full">
@@ -238,7 +242,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Lists</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Lists</p>
             </div>
           </div>
         </div>
@@ -254,7 +258,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Plans</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Plans</p>
             </div>
           </div>
         </div>
@@ -270,7 +274,7 @@ function ContentWrapper1() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Data Sources</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Data Sources</p>
             </div>
           </div>
         </div>
@@ -284,7 +288,7 @@ function BlocksSidebarItem() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative rounded-[8px]" data-name="Blocks / Sidebar Item">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[12px] items-center pb-[6px] pt-[12px] px-[10px] relative w-full">
-          <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Today</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Today</p>
         </div>
       </div>
     </div>
@@ -374,7 +378,7 @@ function BlocksSidebarItem4() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative rounded-[8px]" data-name="Blocks / Sidebar Item">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[12px] items-center pb-[6px] pt-[12px] px-[10px] relative w-full">
-          <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Yesterday</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Yesterday</p>
         </div>
       </div>
     </div>
@@ -660,7 +664,7 @@ function ContentWrapper5() {
                   </div>
                 </div>
               </div>
-              <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Collapse sidebar</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Collapse sidebar</p>
             </div>
           </div>
         </div>
@@ -700,7 +704,7 @@ function Gradient() {
 
 function Frame109() {
   return (
-    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[20px] shrink-0 to-[#0a0a0a] w-full">
+    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[16px] shrink-0 to-[#0a0a0a] w-full">
       <Gradient />
     </div>
   );
@@ -811,19 +815,19 @@ function Frame106() {
 
 function CommandTrigger1() {
   return (
-    <div className="h-[36px] relative rounded-[12px] shrink-0" data-name="_CommandTrigger">
-      <div className="content-stretch flex gap-[8px] h-full items-center justify-center overflow-clip px-[10px] py-[6px] relative rounded-[inherit]">
+    <div className="outlined-command-trigger h-[36px] relative rounded-[12px] shrink-0" data-name="_CommandTrigger" style={outlinedCommandTriggerStyle}>
+      <div className="outlined-command-trigger__content content-stretch flex gap-[8px] h-full items-center justify-center overflow-clip px-[10px] py-[6px] relative rounded-[inherit]">
         <Frame106 />
       </div>
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="outlined-command-trigger__border absolute border border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
 
 function CommandTrigger2() {
   return (
-    <div className="relative rounded-[12px] shrink-0" data-name="_CommandTrigger">
-      <div className="content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
+    <div className="outlined-command-trigger relative rounded-[12px] shrink-0" data-name="_CommandTrigger" style={outlinedCommandTriggerStyle}>
+      <div className="outlined-command-trigger__content content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
         <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / Plus">
           <div className="absolute inset-[20.83%]" data-name="Vector">
             <div className="absolute inset-[-5.89%]">
@@ -837,15 +841,15 @@ function CommandTrigger2() {
           Upload
         </p>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="outlined-command-trigger__border absolute border border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
 
 function CommandTrigger3() {
   return (
-    <div className="relative rounded-[12px] shrink-0" data-name="_CommandTrigger">
-      <div className="content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
+    <div className="outlined-command-trigger relative rounded-[12px] shrink-0" data-name="_CommandTrigger" style={outlinedCommandTriggerStyle}>
+      <div className="outlined-command-trigger__content content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
         <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / Library">
           <div className="absolute inset-[16.67%]" data-name="Vector">
             <div className="absolute inset-[-5.16%]">
@@ -859,15 +863,15 @@ function CommandTrigger3() {
           5
         </p>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="outlined-command-trigger__border absolute border border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
 
 function CommandTrigger4() {
   return (
-    <div className="relative rounded-[12px] shrink-0" data-name="_CommandTrigger">
-      <div className="content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
+    <div className="outlined-command-trigger relative rounded-[12px] shrink-0" data-name="_CommandTrigger" style={outlinedCommandTriggerStyle}>
+      <div className="outlined-command-trigger__content content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
         <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / Repeat">
           <div className="absolute inset-[8.33%_12.5%]" data-name="Vector">
             <div className="absolute inset-[-4.13%_-4.58%]">
@@ -881,15 +885,15 @@ function CommandTrigger4() {
           12
         </p>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="outlined-command-trigger__border absolute border border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
 
 function CommandTrigger5() {
   return (
-    <div className="relative rounded-[12px] shrink-0" data-name="_CommandTrigger">
-      <div className="content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
+    <div className="outlined-command-trigger relative rounded-[12px] shrink-0" data-name="_CommandTrigger" style={outlinedCommandTriggerStyle}>
+      <div className="outlined-command-trigger__content content-stretch flex gap-[8px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit]">
         <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / EllipsisVertical">
           <div className="absolute inset-[16.67%_45.83%]" data-name="Vector">
             <div className="absolute inset-[-5.16%_-41.25%]">
@@ -907,7 +911,7 @@ function CommandTrigger5() {
           More
         </p>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#262626] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="outlined-command-trigger__border absolute border border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
@@ -1005,7 +1009,7 @@ function Frame3() {
 function Frame110() {
   return (
     <div className="content-stretch flex flex-col gap-[36px] items-center pb-[40px] pt-[64px] relative shrink-0 w-full">
-      <p className="font-['Jost:SemiBold',sans-serif] font-semibold leading-none min-w-full overflow-hidden relative shrink-0 text-[#e5e5e5] text-[36px] text-center text-ellipsis w-[min-content] whitespace-nowrap">Hand this off to an agent</p>
+      <p className="font-semibold leading-[44px] min-w-full relative shrink-0 text-[#e5e5e5] text-[36px] text-center w-[min-content] whitespace-nowrap">Hand this off to an agent</p>
       <Frame3 />
     </div>
   );
@@ -2358,7 +2362,7 @@ function Frame103() {
   return (
     <div className="relative shrink-0 w-full">
       <div className="content-stretch flex flex-col gap-[20px] items-start px-[32px] py-[28px] relative w-full">
-        <div className="flex flex-col font-['Jost:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#a3a3a3] text-[18px] whitespace-nowrap">
+        <div className="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[#a3a3a3] text-[18px] whitespace-nowrap">
           <p className="leading-none">Recents</p>
         </div>
         <Frame20 />
