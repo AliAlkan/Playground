@@ -12,3 +12,6 @@ Files included:
 - `experiment/src/assets/eclipse-full.svg`
 
 Main Playground source (`src/`) is intentionally left unchanged.
+
+Live URL after deploy:
+- `https://alialkan.github.io/Playground/experiment/`
