@@ -1,11 +1,20 @@
-import AgentsResearcher from "../imports/AgentsResearcher";
+import { IconRail } from "./components/icon-rail";
+import { Sidebar } from "./components/sidebar";
+import { MainContent } from "./components/main-content";
 
 export default function App() {
   return (
-    <div className="agents-main-scroll h-screen overflow-x-auto overflow-y-hidden bg-[#0a0a0a]">
-      <div className="relative h-full" style={{ minWidth: "1280px" }}>
-        <AgentsResearcher />
+    <div className="bg-[var(--neutral-950)] flex h-screen w-full overflow-hidden">
+      {/* Icon Rail */}
+      <div className="flex items-center p-[6px] shrink-0">
+        <IconRail />
       </div>
+
+      {/* Sidebar */}
+      <Sidebar />
+
+      {/* Main Content */}
+      <MainContent />
     </div>
   );
 }

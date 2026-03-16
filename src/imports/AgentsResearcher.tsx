@@ -4,7 +4,7 @@ import eclipseFullUrl from "../assets/eclipse-full.svg";
 import svgPaths from "./svg-2wacbqcxt8";
 
 const outlinedCommandTriggerStyle = {
-  "--outlined-command-trigger-color": "#262626",
+  "--outlined-command-trigger-color": "var(--neutral-800)",
 } as CSSProperties;
 
 function Layer() {
@@ -13,12 +13,12 @@ function Layer() {
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 100 36">
         <g clipPath="url(#clip0_1_1111)" id="Layer_1">
           <g id="Group">
-            <path d={svgPaths.pa09d580} fill="var(--fill-0, #FAFAFA)" id="Vector" />
-            <path d={svgPaths.pff1c200} fill="var(--fill-0, #FAFAFA)" id="Vector_2" />
-            <path d={svgPaths.p25403680} fill="var(--fill-0, #FAFAFA)" id="Vector_3" />
-            <path d={svgPaths.p11ebb200} fill="var(--fill-0, #FAFAFA)" id="Vector_4" />
-            <path d={svgPaths.p19652d00} fill="var(--fill-0, #FAFAFA)" id="Vector_5" />
-            <path d={svgPaths.p3fca4400} fill="var(--fill-0, #FAFAFA)" id="Vector_6" />
+            <path d={svgPaths.pa09d580} fill="var(--fill-0, var(--neutral-50))" id="Vector" />
+            <path d={svgPaths.pff1c200} fill="var(--fill-0, var(--neutral-50))" id="Vector_2" />
+            <path d={svgPaths.p25403680} fill="var(--fill-0, var(--neutral-50))" id="Vector_3" />
+            <path d={svgPaths.p11ebb200} fill="var(--fill-0, var(--neutral-50))" id="Vector_4" />
+            <path d={svgPaths.p19652d00} fill="var(--fill-0, var(--neutral-50))" id="Vector_5" />
+            <path d={svgPaths.p3fca4400} fill="var(--fill-0, var(--neutral-50))" id="Vector_6" />
           </g>
           <path d={svgPaths.pa054100} fill="var(--fill-0, #932794)" id="Vector_7" />
         </g>
@@ -41,17 +41,17 @@ function Input() {
             <div className="absolute inset-[12.5%]" data-name="Vector">
               <div className="absolute inset-[-5.54%]">
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.3301 13.33">
-                  <path d={svgPaths.p2d6b0180} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                  <path d={svgPaths.p2d6b0180} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                 </svg>
               </div>
             </div>
           </div>
-          <p className="flex-[1_0_0] font-['SF_Pro:Regular',sans-serif] font-normal leading-none min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <p className="flex-[1_0_0] font-['SF_Pro:Regular',sans-serif] font-normal leading-none min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             Search...
           </p>
         </div>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[8px]" />
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[8px]" />
     </div>
   );
 }
@@ -75,7 +75,7 @@ function InputBasic() {
 function Frame98() {
   return (
     <div className="bg-[#932794] content-stretch flex items-center justify-center relative rounded-[12px] shrink-0 size-[32px]">
-      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-none relative shrink-0 text-[#fafafa] text-[12px] text-center whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-none relative shrink-0 text-[var(--neutral-50)] text-[12px] text-center whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         AP
       </p>
     </div>
@@ -94,7 +94,7 @@ function Frame99() {
 function Frame102() {
   return (
     <div className="content-stretch flex h-[36px] items-center justify-center px-[16px] relative rounded-[9999px] shrink-0">
-      <p className="font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">DASHBOARD</p>
+      <p className="font-normal leading-[20px] relative shrink-0 text-[var(--neutral-400)] text-[15px] whitespace-nowrap">DASHBOARD</p>
     </div>
   );
 }
@@ -102,7 +102,7 @@ function Frame102() {
 function Frame101() {
   return (
     <div className="content-stretch flex h-[36px] items-center justify-center px-[16px] relative rounded-[9999px] shrink-0">
-      <p className="font-normal leading-[20px] relative shrink-0 text-[#a3a3a3] text-[15px] whitespace-nowrap">APP STORE</p>
+      <p className="font-normal leading-[20px] relative shrink-0 text-[var(--neutral-400)] text-[15px] whitespace-nowrap">APP STORE</p>
     </div>
   );
 }
@@ -119,7 +119,7 @@ function Frame() {
 function ContentWrapper() {
   return (
     <div className="relative shrink-0 w-full" data-name="Content Wrapper">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="content-stretch flex flex-col items-start px-[16px] relative w-full">
         <div className="h-[56px] relative rounded-[8px] shrink-0 w-full" data-name="Blocks / Sidebar Item">
           <div className="flex flex-row items-center size-full">
@@ -128,12 +128,12 @@ function ContentWrapper() {
                 <div className="absolute inset-[12.47%_12.47%_8.33%_8.33%]" data-name="Vector">
                   <div className="absolute inset-[-5.25%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.0019 14.0019">
-                      <path d={svgPaths.p13ff5d00} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p13ff5d00} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">New chat</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">New chat</p>
             </div>
           </div>
         </div>
@@ -161,12 +161,12 @@ function ContentWrapper1() {
                 <div className="absolute inset-[8.33%]" data-name="Vector">
                   <div className="absolute inset-[-4.99%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6633 14.6634">
-                      <path d={svgPaths.p1e29fd00} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p1e29fd00} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Chats</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Chats</p>
             </div>
           </div>
         </div>
@@ -177,12 +177,12 @@ function ContentWrapper1() {
                 <div className="absolute inset-[16.67%_8.33%]" data-name="Vector">
                   <div className="absolute inset-[-6.23%_-4.99%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6633 11.9967">
-                      <path d={svgPaths.p1307e500} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p1307e500} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Quick Agents</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Quick Agents</p>
             </div>
           </div>
         </div>
@@ -209,12 +209,12 @@ function ContentWrapper1() {
                 <div className="absolute inset-[12.5%_14.74%_12.5%_12.5%]" data-name="Vector">
                   <div className="absolute inset-[-5.54%_-5.73%_-5.54%_-5.71%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.9737 13.33">
-                      <path d={svgPaths.p3239ad80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p3239ad80} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Knowledge</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Knowledge</p>
             </div>
           </div>
         </div>
@@ -223,12 +223,12 @@ function ContentWrapper1() {
             <div className="absolute inset-[12.5%_20.83%]" data-name="Vector">
               <div className="absolute inset-[-5.54%_-7.12%_-5.54%_-7.13%]">
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.6633 13.33">
-                  <path d={svgPaths.pa636f0} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                  <path d={svgPaths.pa636f0} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                 </svg>
               </div>
             </div>
           </div>
-          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Personas</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Personas</p>
         </div>
         <div className="relative rounded-[8px] shrink-0 w-full" data-name="Blocks / Sidebar Item">
           <div className="flex flex-row items-center size-full">
@@ -237,12 +237,12 @@ function ContentWrapper1() {
                 <div className="absolute bottom-1/4 left-[12.5%] right-[12.5%] top-1/4" data-name="Vector">
                   <div className="absolute inset-[-8.31%_-5.54%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.33 9.33">
-                      <path d={svgPaths.p32950e80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p32950e80} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Lists</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Lists</p>
             </div>
           </div>
         </div>
@@ -253,12 +253,12 @@ function ContentWrapper1() {
                 <div className="absolute inset-[20.83%_8.33%]" data-name="Vector">
                   <div className="absolute inset-[-7.13%_-4.99%_-7.12%_-4.99%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6633 10.6633">
-                      <path d={svgPaths.p29e69600} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p29e69600} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Plans</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Plans</p>
             </div>
           </div>
         </div>
@@ -269,12 +269,12 @@ function ContentWrapper1() {
                 <div className="absolute inset-[8.33%_12.5%]" data-name="Vector">
                   <div className="absolute inset-[-4.99%_-5.54%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.33 14.6633">
-                      <path d={svgPaths.p1cedb000} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p1cedb000} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Data Sources</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Data Sources</p>
             </div>
           </div>
         </div>
@@ -288,7 +288,7 @@ function BlocksSidebarItem() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative rounded-[8px]" data-name="Blocks / Sidebar Item">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[12px] items-center pb-[6px] pt-[12px] px-[10px] relative w-full">
-          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Today</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Today</p>
         </div>
       </div>
     </div>
@@ -306,7 +306,7 @@ function ContentWrapper3() {
 function Frame68() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Predicting Turnover: Regression Experiment #4
       </p>
     </div>
@@ -328,7 +328,7 @@ function BlocksSidebarItem1() {
 function Frame69() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Enhancing Academic Writing and Communication
       </p>
     </div>
@@ -352,7 +352,7 @@ function BlocksSidebarItem2() {
 function Frame70() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Footnotes and Frameworks
       </p>
     </div>
@@ -378,7 +378,7 @@ function BlocksSidebarItem4() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative rounded-[8px]" data-name="Blocks / Sidebar Item">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[12px] items-center pb-[6px] pt-[12px] px-[10px] relative w-full">
-          <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Yesterday</p>
+          <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Yesterday</p>
         </div>
       </div>
     </div>
@@ -396,7 +396,7 @@ function ContentWrapper4() {
 function Frame71() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Methodological Frameworks
       </p>
     </div>
@@ -420,7 +420,7 @@ function BlocksSidebarItem5() {
 function Frame72() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Enhancing Academic Writing and Communication
       </p>
     </div>
@@ -442,7 +442,7 @@ function BlocksSidebarItem6() {
 function Frame73() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Designing a Rigorous Knowledge Protocol
       </p>
     </div>
@@ -464,7 +464,7 @@ function BlocksSidebarItem7() {
 function Frame74() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Ethics and Integrity in Academic Inquiry
       </p>
     </div>
@@ -486,7 +486,7 @@ function BlocksSidebarItem8() {
 function Frame75() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Methodological Frameworks
       </p>
     </div>
@@ -508,7 +508,7 @@ function BlocksSidebarItem9() {
 function Frame76() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Enhancing Academic Writing and Communication
       </p>
     </div>
@@ -532,7 +532,7 @@ function BlocksSidebarItem10() {
 function Frame77() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Designing a Rigorous Knowledge Protocol
       </p>
     </div>
@@ -554,7 +554,7 @@ function BlocksSidebarItem11() {
 function Frame78() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Ethics and Integrity in Academic Inquiry
       </p>
     </div>
@@ -576,7 +576,7 @@ function BlocksSidebarItem12() {
 function Frame79() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis w-full whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Ethics and Integrity in Academic Inquiry
       </p>
     </div>
@@ -621,17 +621,17 @@ function ContentWrapper2() {
 function Group() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <div className="bg-[#171717] col-1 h-[414px] ml-0 mt-0 relative row-1 w-[14px]">
-        <div aria-hidden="true" className="absolute border-[#262626] border-l border-solid inset-[0_0_0_-1px] pointer-events-none" />
+      <div className="bg-[var(--neutral-900)] col-1 h-[414px] ml-0 mt-0 relative row-1 w-[14px]">
+        <div aria-hidden="true" className="absolute border-[var(--neutral-800)] border-l border-solid inset-[0_0_0_-1px] pointer-events-none" />
       </div>
-      <div className="bg-[#404040] col-1 h-[254px] ml-[3px] mt-[6px] rounded-[4px] row-1 w-[8px]" />
+      <div className="bg-[var(--neutral-700)] col-1 h-[254px] ml-[3px] mt-[6px] rounded-[4px] row-1 w-[8px]" />
     </div>
   );
 }
 
 function Frame100() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] items-start min-h-px min-w-px overflow-clip relative rounded-[8px]" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, rgb(38, 38, 38) 0%, rgb(38, 38, 38) 100%)" }}>
+    <div className="content-stretch flex flex-[1_0_0] items-start min-h-px min-w-px overflow-clip relative rounded-[8px]" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, var(--neutral-800) 0%, var(--neutral-800) 100%)" }}>
       <ContentWrapper2 />
       <Group />
     </div>
@@ -659,12 +659,12 @@ function ContentWrapper5() {
                 <div className="absolute inset-[12.5%]" data-name="Vector">
                   <div className="absolute inset-[-5.54%]">
                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.33 13.33">
-                      <path d={svgPaths.p30c6a0f0} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                      <path d={svgPaths.p30c6a0f0} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
                     </svg>
                   </div>
                 </div>
               </div>
-              <p className="font-semibold leading-[20px] relative shrink-0 text-[#fafafa] text-[15px] whitespace-nowrap">Collapse sidebar</p>
+              <p className="font-semibold leading-[20px] relative shrink-0 text-[var(--neutral-50)] text-[15px] whitespace-nowrap">Collapse sidebar</p>
             </div>
           </div>
         </div>
@@ -676,7 +676,7 @@ function ContentWrapper5() {
 function BlocksSidebarAssistant() {
   return (
     <div className="absolute bottom-0 bg-[rgba(10,10,10,0.6)] content-stretch flex flex-col gap-[8px] items-start left-0 top-[60px] w-[256px]" data-name="Blocks / Sidebar / Assistant">
-      <div aria-hidden="true" className="absolute border-[#171717] border-r border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-r border-solid inset-0 pointer-events-none" />
       <Frame81 />
       <ContentWrapper1 />
       <Frame80 />
@@ -704,7 +704,7 @@ function Gradient() {
 
 function Frame109() {
   return (
-    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[16px] shrink-0 to-[#0a0a0a] w-full">
+    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#0f0f0f] h-[384px] items-center overflow-clip pb-[40px] pt-[56px] relative rounded-[16px] shrink-0 to-[var(--neutral-950)] w-full">
       <Gradient />
     </div>
   );
@@ -736,7 +736,7 @@ function AutoResizeTextarea({ value, onChange }: { value: string; onChange: (val
     <textarea
       ref={textareaRef}
       aria-label="Research topic"
-      className="bg-transparent border-0 font-['SF_Pro:Regular',sans-serif] font-normal leading-[28px] outline-none overflow-hidden p-0 resize-none text-[#fafafa] text-[16px] w-full min-h-[86px] placeholder:text-[#737373]"
+      className="bg-transparent border-0 font-['SF_Pro:Regular',sans-serif] font-normal leading-[28px] outline-none overflow-hidden p-0 resize-none text-[var(--neutral-50)] text-[16px] w-full min-h-[86px] placeholder:text-[var(--neutral-500)]"
       onChange={(event) => {
         onChange(event.currentTarget.value);
         resizeTextarea(event.currentTarget);
@@ -766,7 +766,7 @@ function Frame112() {
         <div className="absolute inset-[8.33%_12.5%]" data-name="Vector">
           <div className="absolute inset-[-3.67%_-4.07%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6 16.1">
-              <path d={svgPaths.p312ace00} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p312ace00} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
@@ -779,7 +779,7 @@ function Frame111() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <Frame112 />
-      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[#fafafa] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-50)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         EvoResearcher
       </p>
     </div>
@@ -788,13 +788,13 @@ function Frame111() {
 
 function CommandTrigger() {
   return (
-    <div className="content-stretch flex gap-[4px] h-[40px] items-center justify-center overflow-clip pl-[3px] pr-[14px] relative rounded-[9999px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.2) 0%, rgba(10, 10, 10, 0.2) 100%), linear-gradient(90deg, rgb(64, 64, 64) 0%, rgb(64, 64, 64) 100%)" }}>
+    <div className="content-stretch flex gap-[4px] h-[40px] items-center justify-center overflow-clip pl-[3px] pr-[14px] relative rounded-[9999px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.2) 0%, rgba(10, 10, 10, 0.2) 100%), linear-gradient(90deg, var(--neutral-700) 0%, var(--neutral-700) 100%)" }}>
       <Frame111 />
       <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ChevronDown">
         <div className="absolute bottom-[37.5%] left-1/4 right-1/4 top-[37.5%]" data-name="Vector">
           <div className="absolute inset-[-13.75%_-6.88%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.1 5.1">
-              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
@@ -806,7 +806,7 @@ function CommandTrigger() {
 function Frame106() {
   return (
     <div className="content-stretch flex items-center relative shrink-0">
-      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#d4d4d4] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-300)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         GPT 5
       </p>
     </div>
@@ -832,12 +832,12 @@ function CommandTrigger2() {
           <div className="absolute inset-[20.83%]" data-name="Vector">
             <div className="absolute inset-[-5.89%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.4333 10.4333">
-                <path d={svgPaths.p3dd52ee0} id="Vector" stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                <path d={svgPaths.p3dd52ee0} id="Vector" stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
               </svg>
             </div>
           </div>
         </div>
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#d4d4d4] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-300)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
           Upload
         </p>
       </div>
@@ -854,12 +854,12 @@ function CommandTrigger3() {
           <div className="absolute inset-[16.67%]" data-name="Vector">
             <div className="absolute inset-[-5.16%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.7668 11.7668">
-                <path d={svgPaths.p2bc84680} id="Vector" stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                <path d={svgPaths.p2bc84680} id="Vector" stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
               </svg>
             </div>
           </div>
         </div>
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#d4d4d4] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-300)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
           5
         </p>
       </div>
@@ -876,12 +876,12 @@ function CommandTrigger4() {
           <div className="absolute inset-[8.33%_12.5%]" data-name="Vector">
             <div className="absolute inset-[-4.13%_-4.58%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 14.4333">
-                <path d={svgPaths.p1fca9800} id="Vector" stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                <path d={svgPaths.p1fca9800} id="Vector" stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
               </svg>
             </div>
           </div>
         </div>
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#d4d4d4] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-300)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
           12
         </p>
       </div>
@@ -899,15 +899,15 @@ function CommandTrigger5() {
             <div className="absolute inset-[-5.16%_-41.25%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2.43333 11.7667">
                 <g id="Vector">
-                  <path d={svgPaths.pbb62180} stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                  <path d={svgPaths.pb439b80} stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                  <path d={svgPaths.p1c7be500} stroke="var(--stroke-0, #D4D4D4)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                  <path d={svgPaths.pbb62180} stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                  <path d={svgPaths.pb439b80} stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                  <path d={svgPaths.p1c7be500} stroke="var(--stroke-0, var(--neutral-300))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                 </g>
               </svg>
             </div>
           </div>
         </div>
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[#d4d4d4] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-300)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
           More
         </p>
       </div>
@@ -944,7 +944,7 @@ function Frame104({ isActive }: { isActive: boolean }) {
         className="content-stretch flex gap-[8px] h-[40px] items-center justify-center px-[20px] py-[8px] relative rounded-[9999px] shrink-0 transition-[background-color] duration-200"
         data-name="Button"
         style={{
-          backgroundColor: isActive ? "#932794" : "#262626",
+          backgroundColor: isActive ? "#932794" : "var(--neutral-800)",
           backgroundImage: "none",
         }}
       >
@@ -952,14 +952,14 @@ function Frame104({ isActive }: { isActive: boolean }) {
           <div className="absolute bottom-[12.5%] left-1/4 right-[16.67%] top-[12.5%]" data-name="Vector">
             <div className="absolute inset-[-5.54%_-7.12%_-5.54%_-7.13%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.6633 13.33">
-                <path d={svgPaths.p1ab67b80} id="Vector" stroke={isActive ? "#FAFAFA" : "#A3A3A3"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1ab67b80} id="Vector" stroke={isActive ? "var(--neutral-50)" : "var(--neutral-400)"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </svg>
             </div>
           </div>
         </div>
         <div
           className="flex flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] whitespace-nowrap transition-colors duration-200"
-          style={{ color: isActive ? "#fafafa" : "#a3a3a3", fontVariationSettings: "'wdth' 100" }}
+          style={{ color: isActive ? "var(--neutral-50)" : "var(--neutral-400)", fontVariationSettings: "'wdth' 100" }}
         >
           <p className="leading-[20px]">Start a run</p>
         </div>
@@ -988,9 +988,9 @@ function Frame1() {
   const isRunReady = prompt.trim().length > 0;
 
   return (
-    <div className="agents-composer group bg-[#171717] content-stretch flex flex-col items-start relative rounded-[20px] shrink-0 w-[896px]">
+    <div className="agents-composer group bg-[var(--neutral-900)] content-stretch flex flex-col items-start relative rounded-[20px] shrink-0 w-[896px]">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[20px] z-10">
-        <div className="absolute border border-[#262626] border-solid inset-0 rounded-[20px] transition-colors duration-200 group-hover:border-[#323232] group-focus-within:border-[#323232]" />
+        <div className="absolute border border-[var(--neutral-800)] border-solid inset-0 rounded-[20px] transition-colors duration-200 group-hover:border-[#323232] group-focus-within:border-[#323232]" />
       </div>
       <Frame2 onPromptChange={setPrompt} prompt={prompt} />
       <Footer isRunReady={isRunReady} />
@@ -1009,7 +1009,7 @@ function Frame3() {
 function Frame110() {
   return (
     <div className="content-stretch flex flex-col gap-[36px] items-center pb-[40px] pt-[64px] relative shrink-0 w-full">
-      <p className="font-semibold leading-[44px] min-w-full relative shrink-0 text-[#e5e5e5] text-[36px] text-center w-[min-content] whitespace-nowrap">Hand this off to an agent</p>
+      <p className="font-semibold leading-[44px] min-w-full relative shrink-0 text-[var(--neutral-200)] text-[36px] text-center w-[min-content] whitespace-nowrap">Hand this off to an agent</p>
       <Frame3 />
     </div>
   );
@@ -1020,7 +1020,7 @@ function IconSearch() {
     <div className="relative shrink-0 size-[16px]" data-name="Icon / Search">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16 16">
         <g id="Icon / Search">
-          <path d={svgPaths.p3114e300} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinejoin="round" strokeWidth="1.1" />
+          <path d={svgPaths.p3114e300} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinejoin="round" strokeWidth="1.1" />
         </g>
       </svg>
     </div>
@@ -1032,35 +1032,35 @@ function Input1() {
     <div className="h-[36px] relative rounded-[8px] shrink-0 w-[320px]" data-name="Input">
       <div className="content-stretch flex gap-[12px] items-center overflow-clip px-[10px] py-[8px] relative rounded-[inherit] size-full">
         <IconSearch />
-        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-none overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-none overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
           Search
         </p>
       </div>
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[8px]" />
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[8px]" />
     </div>
   );
 }
 
 function CommandTrigger6() {
   return (
-    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, rgb(38, 38, 38) 0%, rgb(38, 38, 38) 100%)" }}>
+    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, var(--neutral-800) 0%, var(--neutral-800) 100%)" }}>
       <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / GitPullRequest">
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.58%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 13.1">
-              <path d={svgPaths.p3926db00} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p3926db00} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[#fafafa] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-50)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Agent
       </p>
       <div className="opacity-50 overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ChevronDown">
         <div className="absolute bottom-[37.5%] left-1/4 right-1/4 top-[37.5%]" data-name="Vector">
           <div className="absolute inset-[-13.75%_-6.88%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.1 5.1">
-              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, #F5F5F5)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, var(--neutral-100))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
@@ -1071,24 +1071,24 @@ function CommandTrigger6() {
 
 function CommandTrigger7() {
   return (
-    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, rgb(38, 38, 38) 0%, rgb(38, 38, 38) 100%)" }}>
+    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, var(--neutral-800) 0%, var(--neutral-800) 100%)" }}>
       <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ListFilter">
         <div className="absolute bottom-1/4 left-[12.5%] right-[12.5%] top-1/4" data-name="Vector">
           <div className="absolute inset-[-6.88%_-4.58%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 9.1">
-              <path d={svgPaths.p6c5e900} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p6c5e900} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] overflow-hidden relative shrink-0 text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Status
       </p>
       <div className="opacity-50 overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ChevronDown">
         <div className="absolute bottom-[37.5%] left-1/4 right-1/4 top-[37.5%]" data-name="Vector">
           <div className="absolute inset-[-13.75%_-6.88%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.1 5.1">
-              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, #F5F5F5)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, var(--neutral-100))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
@@ -1099,24 +1099,24 @@ function CommandTrigger7() {
 
 function CommandTrigger8() {
   return (
-    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0 w-[144px]" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, rgb(38, 38, 38) 0%, rgb(38, 38, 38) 100%)" }}>
+    <div className="content-stretch flex gap-[8px] h-[36px] items-center overflow-clip px-[12px] py-[6px] relative rounded-[8px] shrink-0 w-[144px]" data-name="_CommandTrigger" style={{ backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.6) 100%), linear-gradient(90deg, var(--neutral-800) 0%, var(--neutral-800) 100%)" }}>
       <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ArrowDownNarrowWide">
         <div className="absolute inset-[16.67%_12.5%]" data-name="Vector">
           <div className="absolute inset-[-5.16%_-4.58%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 11.7667">
-              <path d={svgPaths.p1ab3d300} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p1ab3d300} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <p className="flex-[1_0_0] font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="flex-[1_0_0] font-['SF_Pro:Medium',sans-serif] font-medium leading-[20px] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         Recently created
       </p>
       <div className="opacity-50 overflow-clip relative shrink-0 size-[16px]" data-name="Icon / ChevronDown">
         <div className="absolute bottom-[37.5%] left-1/4 right-1/4 top-[37.5%]" data-name="Vector">
           <div className="absolute inset-[-13.75%_-6.88%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.1 5.1">
-              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, #F5F5F5)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p36d8fd00} id="Vector" stroke="var(--stroke-0, var(--neutral-100))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
@@ -1135,10 +1135,10 @@ function TabsTrigger() {
               <div className="absolute inset-[-4.58%]">
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 13.1">
                   <g id="Vector">
-                    <path d={svgPaths.p13ddeb00} stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                    <path d={svgPaths.p21712180} stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                    <path d={svgPaths.p3751c080} stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                    <path d={svgPaths.p1181c4f0} stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                    <path d={svgPaths.p13ddeb00} stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                    <path d={svgPaths.p21712180} stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                    <path d={svgPaths.p3751c080} stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                    <path d={svgPaths.p1181c4f0} stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                   </g>
                 </svg>
               </div>
@@ -1152,14 +1152,14 @@ function TabsTrigger() {
 
 function TabsTrigger1() {
   return (
-    <div className="bg-[#0a0a0a] h-full relative rounded-[6px] shrink-0 w-[28px]" data-name="_Tabs / Trigger">
+    <div className="bg-[var(--neutral-950)] h-full relative rounded-[6px] shrink-0 w-[28px]" data-name="_Tabs / Trigger">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="content-stretch flex gap-[10px] items-center justify-center px-[12px] py-[6px] relative size-full">
           <div className="overflow-clip relative shrink-0 size-[16px]" data-name="Icon / Rows3">
             <div className="absolute inset-[12.5%]" data-name="Vector">
               <div className="absolute inset-[-4.58%]">
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 13.1">
-                  <path d={svgPaths.p10c72d00} id="Vector" stroke="var(--stroke-0, #FAFAFA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                  <path d={svgPaths.p10c72d00} id="Vector" stroke="var(--stroke-0, var(--neutral-50))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                 </svg>
               </div>
             </div>
@@ -1172,7 +1172,7 @@ function TabsTrigger1() {
 
 function Tabs() {
   return (
-    <div className="bg-[#262626] content-stretch flex h-[36px] items-center p-[4px] relative rounded-[8px] shrink-0" data-name="Tabs">
+    <div className="bg-[var(--neutral-800)] content-stretch flex h-[36px] items-center p-[4px] relative rounded-[8px] shrink-0" data-name="Tabs">
       <TabsTrigger />
       <TabsTrigger1 />
     </div>
@@ -1201,8 +1201,8 @@ function Frame20() {
 
 function Checkbox() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1211,7 +1211,7 @@ function Frame25() {
   return (
     <div className="content-stretch flex flex-[1_0_0] gap-[14px] items-center min-h-px min-w-px relative">
       <Checkbox />
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-500)] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-none overflow-hidden">Name</p>
       </div>
     </div>
@@ -1221,7 +1221,7 @@ function Frame25() {
 function Frame27() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[192px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-500)] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-none overflow-hidden">Agent</p>
       </div>
     </div>
@@ -1231,7 +1231,7 @@ function Frame27() {
 function Frame23() {
   return (
     <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-500)] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-none overflow-hidden">Created</p>
       </div>
       <div className="flex items-center justify-center relative shrink-0">
@@ -1239,7 +1239,7 @@ function Frame23() {
           <div className="h-[10.667px] relative w-[5.333px]" data-name="Vector">
             <div className="absolute inset-[-5.16%_-10.31%]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6.43333 11.7667">
-                <path d={svgPaths.p1fa5c0} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                <path d={svgPaths.p1fa5c0} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
               </svg>
             </div>
           </div>
@@ -1252,7 +1252,7 @@ function Frame23() {
 function Frame21() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[190px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-500)] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-none overflow-hidden">Status</p>
       </div>
     </div>
@@ -1270,15 +1270,15 @@ function Frame50() {
           <Frame21 />
         </div>
       </div>
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
     </div>
   );
 }
 
 function Checkbox1() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1288,7 +1288,7 @@ function Frame82() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Methodological Frameworks</p>
           </div>
         </div>
@@ -1313,12 +1313,12 @@ function Frame86() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1336,7 +1336,7 @@ function Frame22() {
 function Frame17() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -1350,12 +1350,12 @@ function Frame5() {
         <div className="absolute inset-[8.33%]" data-name="Vector">
           <div className="absolute inset-[-4.13%_-4.12%_-4.12%_-4.13%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.4333 14.4333">
-              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">Thread initialization</p>
       </div>
     </div>
@@ -1378,9 +1378,9 @@ function Frame11() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -1393,7 +1393,7 @@ function Frame11() {
 function Frame35() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame12 />
@@ -1409,8 +1409,8 @@ function Frame35() {
 
 function Checkbox2() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1420,7 +1420,7 @@ function Frame83() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Identifying Gaps in the Existing Literature</p>
           </div>
         </div>
@@ -1445,12 +1445,12 @@ function Frame87() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1468,7 +1468,7 @@ function Frame26() {
 function Frame18() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -1482,12 +1482,12 @@ function Frame6() {
         <div className="absolute inset-[8.33%]" data-name="Vector">
           <div className="absolute inset-[-4.13%_-4.12%_-4.12%_-4.13%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.4333 14.4333">
-              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">Section 4 writing</p>
       </div>
     </div>
@@ -1510,9 +1510,9 @@ function Frame14() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -1525,7 +1525,7 @@ function Frame14() {
 function Frame49() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame13 />
@@ -1541,8 +1541,8 @@ function Frame49() {
 
 function Checkbox3() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1552,7 +1552,7 @@ function Frame84() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Predicting Turnover: Regression Experiment #4</p>
           </div>
         </div>
@@ -1577,12 +1577,12 @@ function Frame88() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1600,7 +1600,7 @@ function Frame30() {
 function Frame31() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -1614,12 +1614,12 @@ function Frame7() {
         <div className="absolute inset-[8.33%]" data-name="Vector">
           <div className="absolute inset-[-4.13%_-4.12%_-4.12%_-4.13%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.4333 14.4333">
-              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+              <path d={svgPaths.p29f6fb80} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">{`Assembly & export`}</p>
       </div>
     </div>
@@ -1642,9 +1642,9 @@ function Frame16() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -1657,7 +1657,7 @@ function Frame16() {
 function Frame29() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame15 />
@@ -1673,8 +1673,8 @@ function Frame29() {
 
 function Checkbox4() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1684,7 +1684,7 @@ function Frame85() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">{`Data Cleaning & Feature Engineering Brainstorm`}</p>
           </div>
         </div>
@@ -1709,12 +1709,12 @@ function Frame89() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1732,7 +1732,7 @@ function Frame34() {
 function Frame36() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -1774,9 +1774,9 @@ function Frame38() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -1789,7 +1789,7 @@ function Frame38() {
 function Frame48() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame33 />
@@ -1805,8 +1805,8 @@ function Frame48() {
 
 function Checkbox5() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1816,7 +1816,7 @@ function Frame90() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">{`Data Cleaning & Feature Engineering Brainstorm`}</p>
           </div>
         </div>
@@ -1841,12 +1841,12 @@ function Frame91() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1864,7 +1864,7 @@ function Frame41() {
 function Frame42() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -1906,9 +1906,9 @@ function Frame44() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -1921,7 +1921,7 @@ function Frame44() {
 function Frame39() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame40 />
@@ -1937,8 +1937,8 @@ function Frame39() {
 
 function Checkbox6() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -1948,7 +1948,7 @@ function Frame92() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Methodological Frameworks</p>
           </div>
         </div>
@@ -1973,12 +1973,12 @@ function Frame93() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -1996,7 +1996,7 @@ function Frame47() {
 function Frame51() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -2038,9 +2038,9 @@ function Frame53() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -2053,7 +2053,7 @@ function Frame53() {
 function Frame45() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame46 />
@@ -2069,8 +2069,8 @@ function Frame45() {
 
 function Checkbox7() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -2080,7 +2080,7 @@ function Frame94() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Developing Protocols for Scoping, Systematic, and Realist Reviews</p>
           </div>
         </div>
@@ -2105,12 +2105,12 @@ function Frame95() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -2128,7 +2128,7 @@ function Frame56() {
 function Frame57() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -2170,9 +2170,9 @@ function Frame60() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -2185,7 +2185,7 @@ function Frame60() {
 function Frame54() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame55 />
@@ -2201,8 +2201,8 @@ function Frame54() {
 
 function Checkbox8() {
   return (
-    <div className="bg-[#0a0a0a] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
-      <div aria-hidden="true" className="absolute border border-[#404040] border-solid inset-0 pointer-events-none rounded-[4px]" />
+    <div className="bg-[var(--neutral-950)] relative rounded-[4px] shrink-0 size-[16px]" data-name="Checkbox">
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-700)] border-solid inset-0 pointer-events-none rounded-[4px]" />
     </div>
   );
 }
@@ -2212,7 +2212,7 @@ function Frame96() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pr-[10px] relative w-full">
-          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Medium',sans-serif] font-medium justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-100)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
             <p className="leading-none overflow-hidden">Designing a Rigorous Knowledge Protocol</p>
           </div>
         </div>
@@ -2237,12 +2237,12 @@ function Frame97() {
         <div className="absolute inset-[12.5%]" data-name="Vector">
           <div className="absolute inset-[-4.76%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.5 11.5">
-              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, #A3A3A3)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d={svgPaths.p17438340} id="Vector" stroke="var(--stroke-0, var(--neutral-400))" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-[1_0_0] flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] min-h-px min-w-px overflow-hidden relative text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[16px] overflow-hidden">Researcher</p>
       </div>
     </div>
@@ -2260,7 +2260,7 @@ function Frame63() {
 function Frame64() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-[140px]">
-      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[var(--neutral-400)] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
         <p className="leading-[20px] overflow-hidden">6 Jul 2024</p>
       </div>
     </div>
@@ -2302,9 +2302,9 @@ function Frame67() {
           <div className="absolute inset-[-49.88%_-6.23%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
               <g id="Vector">
-                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, #737373)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p21d13c00} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p10de4900} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgPaths.p1fd94400} stroke="var(--stroke-0, var(--neutral-500))" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
               </g>
             </svg>
           </div>
@@ -2317,7 +2317,7 @@ function Frame67() {
 function Frame61() {
   return (
     <div className="relative shrink-0 w-full">
-      <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
           <Frame62 />
@@ -2353,7 +2353,7 @@ function Frame19() {
         <Frame54 />
         <Frame61 />
       </div>
-      <div aria-hidden="true" className="absolute border border-[#171717] border-solid inset-0 pointer-events-none rounded-[12px]" />
+      <div aria-hidden="true" className="absolute border border-[var(--neutral-900)] border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>
   );
 }
@@ -2362,7 +2362,7 @@ function Frame103() {
   return (
     <div className="relative shrink-0 w-full">
       <div className="content-stretch flex flex-col gap-[20px] items-start px-[32px] py-[28px] relative w-full">
-        <div className="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[#a3a3a3] text-[18px] whitespace-nowrap">
+        <div className="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[var(--neutral-400)] text-[18px] whitespace-nowrap">
           <p className="leading-none">Recents</p>
         </div>
         <Frame20 />
@@ -2384,9 +2384,9 @@ function Frame113() {
 
 export default function AgentsResearcher() {
   return (
-    <div className="bg-[#0a0a0a] h-full overflow-hidden relative w-full" data-name="Agents _Researcher">
+    <div className="bg-[var(--neutral-950)] h-full overflow-hidden relative w-full" data-name="Agents _Researcher">
       <div className="absolute bg-[rgba(10,10,10,0.6)] content-stretch flex items-center justify-between left-0 px-[24px] py-[12px] right-[14px] top-0" data-name="Header">
-        <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+        <div aria-hidden="true" className="absolute border-[var(--neutral-900)] border-b border-solid inset-0 pointer-events-none" />
         <Layer />
         <Frame99 />
         <Frame />

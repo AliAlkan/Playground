@@ -23,7 +23,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
-        experiment: path.resolve(__dirname, "experiment/index.html"),
+        agents: path.resolve(__dirname, "exp/agents/index.html"),
       },
     },
   },
