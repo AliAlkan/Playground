@@ -11,6 +11,7 @@ interface StatusInfo {
   text: string;
   duration: string;
   type: RunStatus;
+  endedAt?: string;
 }
 
 interface TableRow {
@@ -27,16 +28,24 @@ interface TableRow {
 }
 
 const tableData: TableRow[] = [
-  { id: "1",  name: "Methodological Frameworks",                       agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "26m 11s", type: "running"    }, chevron: "expanded",  indent: false, actions: "3icons" },
-  { id: "2",  name: "Thread initialization",                           agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "26m 11s", type: "running"    }, chevron: null,        indent: true,  actions: "4icons" },
-  { id: "3",  name: "Assembly & export",                               agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "11s",     type: "completed"  }, chevron: null,        indent: true,  actions: "4icons" },
-  { id: "4",  name: "Identifying Gaps in the Existing Literature",     agent: "Researcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Section 4 writing",     duration: "26m 11s", type: "running"    }, chevron: null,        indent: false, actions: "1icon"  },
-  { id: "5",  name: "Predicting Turnover: Regression Experiment #4",   agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Terminated",            duration: "9m 11s",  type: "terminated" }, chevron: "collapsed", indent: false, actions: "3icons" },
-  { id: "6",  name: "Data Cleaning & Feature Engineering Brainstorm",  agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed"  }, chevron: "collapsed", indent: false, actions: "3icons" },
-  { id: "7",  name: "Identifying Gaps in the Existing Literature",     agent: "Researcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed"  }, chevron: null,        indent: false, actions: "1icon"  },
-  { id: "8",  name: "Methodological Frameworks",                       agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed"  }, chevron: "collapsed", indent: false, actions: "3icons" },
-  { id: "9",  name: "Identifying Gaps in the Existing Literature",     agent: "Researcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed"  }, chevron: null,        indent: false, actions: "1icon"  },
-  { id: "10", name: "Methodological Frameworks",                       agent: "Resolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed"  }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "1",  name: "Component Library Theming Rollout",               agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "26m 11s", type: "running"    }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "2",  name: "Updating agent prompt for theme token migration", agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "26m 11s", type: "running"    }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "3",  name: "Exporting visual snapshots for themed components",agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "11s",     type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "4",  name: "Meta-Analysis of Transformer Interpretability Methods", agent: "EvoResearcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Section 4 writing",     duration: "26m 11s", type: "running"                            }, chevron: null,        indent: false, actions: "1icon"  },
+  { id: "5",  name: "Checkout Flow Accessibility Remediation",         agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Terminated",            duration: "9m 11s",  type: "terminated", endedAt: "6 Jul 24, 22:36" }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "6",  name: "Updating agent prompt for WCAG contrast fixes",   agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "8m 14s",  type: "running"                            }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "7",  name: "Exporting accessibility audit summary",           agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "14s",     type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "8",  name: "Dashboard Performance Optimization Sprint",        agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "9",  name: "Updating agent prompt for render path optimization", agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "3m 22s",  type: "running"                            }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "10", name: "Exporting Lighthouse performance report",         agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "20s",     type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "11", name: "Systematic Review of RAG Evaluation Benchmarks",  agent: "EvoResearcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: false, actions: "1icon"  },
+  { id: "12", name: "Authentication UX Error-State Refresh",           agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "13", name: "Updating agent prompt for auth form validation states", agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "6m 51s",  type: "running"                            }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "14", name: "Exporting interaction test coverage",             agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "17s",     type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "15", name: "Causal Inference in Educational Interventions: Literature Mapping", agent: "EvoResearcher",  agentIconType: "microscope", model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: false, actions: "1icon"  },
+  { id: "16", name: "Frontend Build Pipeline Hardening",               agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "26m 11s", type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: "collapsed", indent: false, actions: "3icons" },
+  { id: "17", name: "Updating agent prompt for chunk splitting strategy", agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Thread initialization",  duration: "4m 03s",  type: "running"                            }, chevron: null,        indent: true,  actions: "4icons" },
+  { id: "18", name: "Exporting bundle analysis artifacts",             agent: "EvoResolver",    agentIconType: "bot",        model: "GPT 5.4", created: "6 Jul 24, 22:10", status: { text: "Completed",              duration: "9s",      type: "completed",  endedAt: "6 Jul 24, 22:36" }, chevron: null,        indent: true,  actions: "4icons" },
 ];
 
 const outlinedCommandTriggerStyle = {
@@ -56,7 +65,7 @@ function formatSeconds(total: number): string {
 }
 
 function StatusBadge({ status }: { status: StatusInfo }) {
-  const { type, text, duration } = status;
+  const { type, text, duration, endedAt } = status;
   const isRunning = type === "running";
 
   const [elapsed, setElapsed] = useState(() => parseSeconds(duration));
@@ -70,16 +79,25 @@ function StatusBadge({ status }: { status: StatusInfo }) {
 
   const bgStyle =
     type === "completed"
-      ? { backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.8) 100%), linear-gradient(90deg, rgb(84, 255, 167) 0%, rgb(84, 255, 167) 100%)" }
+      ? {
+          background: "#193B29",
+          boxShadow: "inset 0 0 0 1px #193B29",
+        }
       : type === "terminated"
-        ? { backgroundImage: "linear-gradient(90deg, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.8) 100%), linear-gradient(90deg, rgb(248, 113, 113) 0%, rgb(248, 113, 113) 100%)" }
+        ? {
+            background: "#3A1F1F",
+            boxShadow: "inset 0 0 0 1px #3A1F1F",
+          }
         : {};
 
   const textColor =
     type === "completed" ? "#4ade80" : type === "terminated" ? "#fca5a5" : "#d4d4d4";
 
-  return (
-    <div className={`content-stretch flex gap-[8px] h-[28px] items-center justify-center p-[8px] relative rounded-[10px] shrink-0${isRunning ? " status-badge-running" : ""}`} style={bgStyle}>
+  const badge = (
+    <div
+      className={`content-stretch flex gap-[8px] h-[28px] items-center justify-center p-[8px] relative rounded-[10px] shrink-0 overflow-hidden${isRunning ? " status-badge-running" : ""}`}
+      style={bgStyle}
+    >
       {type === "completed" && (
         <div className="overflow-clip relative shrink-0 size-[16px]">
           <div className="absolute bottom-[29.17%] left-[16.67%] right-[16.67%] top-1/4">
@@ -130,6 +148,11 @@ function StatusBadge({ status }: { status: StatusInfo }) {
       </div>
     </div>
   );
+
+  if ((type === "completed" || type === "terminated") && endedAt) {
+    return <WithTooltip title={`Ended on ${endedAt}`}>{badge}</WithTooltip>;
+  }
+  return badge;
 }
 
 function AgentBadge({ agent, iconType }: { agent: string; iconType: "bot" | "microscope" }) {
@@ -163,11 +186,23 @@ function AgentBadge({ agent, iconType }: { agent: string; iconType: "bot" | "mic
   );
 }
 
-function WithTooltip({ children, title, subtitle, className }: { children: React.ReactNode; title: string; subtitle?: string; className?: string }) {
+function WithTooltip({
+  children,
+  title,
+  subtitle,
+  className,
+  disabled = false,
+}: {
+  children: React.ReactNode;
+  title: string;
+  subtitle?: string;
+  className?: string;
+  disabled?: boolean;
+}) {
   return (
     <div className={`relative group/tooltip${className ? ` ${className}` : ""}`}>
       {children}
-      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-[8px] z-50 opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-150 pointer-events-none">
+      <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-[8px] z-50 transition-opacity duration-150 pointer-events-none ${disabled ? "hidden" : "opacity-0 group-hover/tooltip:opacity-100"}`}>
         <div className="bg-[#1c1c1c] border border-[#333333] rounded-[8px] px-[10px] py-[8px] flex flex-col gap-[3px] whitespace-nowrap shadow-[0_4px_16px_rgba(0,0,0,0.5)]">
           <span className="font-['SF_Pro:Regular',sans-serif] text-[12px] leading-none text-[#e5e5e5]" style={{ fontVariationSettings: "'wdth' 100" }}>{title}</span>
           {subtitle && (
@@ -176,6 +211,59 @@ function WithTooltip({ children, title, subtitle, className }: { children: React
         </div>
       </div>
     </div>
+  );
+}
+
+function TruncatedTitle({
+  title,
+  className,
+  textClassName,
+}: {
+  title: string;
+  className?: string;
+  textClassName: string;
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const element = textRef.current;
+    if (!container || !element) return;
+
+    const checkTruncation = () => {
+      setIsTruncated(element.scrollWidth > container.clientWidth + 1);
+    };
+
+    checkTruncation();
+    const rafId = requestAnimationFrame(checkTruncation);
+    const observer = new ResizeObserver(checkTruncation);
+    observer.observe(container);
+    observer.observe(element);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      observer.disconnect();
+    };
+  }, [title]);
+
+  const textNode = (
+    <div
+      ref={textRef}
+      className={`block w-full ${textClassName}`}
+      style={{ fontVariationSettings: "'wdth' 100" }}
+    >
+      {title}
+    </div>
+  );
+
+  return (
+    <WithTooltip title={title} className={className} disabled={!isTruncated}>
+      <div ref={containerRef}>
+        {textNode}
+      </div>
+    </WithTooltip>
   );
 }
 
@@ -215,24 +303,6 @@ function ActionBook() {
   );
 }
 
-function ActionGitPR() {
-  return (
-    <WithTooltip title="Go to the branch" subtitle="main">
-      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
-        <div className="overflow-clip relative shrink-0 size-[16px]">
-          <div className="absolute inset-[12.5%]">
-            <div className="absolute inset-[-5.54%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.33 13.33">
-                <path d={svgTablePaths.pe6aad80} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </WithTooltip>
-  );
-}
-
 function ActionEllipsis() {
   return (
     <WithTooltip title="More">
@@ -258,25 +328,23 @@ function ActionEllipsis() {
 function RowActions({ variant }: { variant: "3icons" | "4icons" | "1icon" }) {
   if (variant === "4icons") {
     return (
-      <div className="content-stretch flex gap-[4px] items-center justify-end relative shrink-0 w-[140px]">
+      <div className="content-stretch flex gap-[4px] items-center justify-end relative shrink-0 w-[112px]">
         <ActionTicketCheck />
         <ActionBook />
-        <ActionGitPR />
         <ActionEllipsis />
       </div>
     );
   }
   if (variant === "3icons") {
     return (
-      <div className="content-stretch flex gap-[4px] items-center justify-end relative shrink-0 w-[140px]">
+      <div className="content-stretch flex gap-[4px] items-center justify-end relative shrink-0 w-[112px]">
         <ActionBook />
-        <ActionGitPR />
         <ActionEllipsis />
       </div>
     );
   }
   return (
-    <div className="content-stretch flex items-center justify-end relative shrink-0 w-[140px]">
+    <div className="content-stretch flex items-center justify-end relative shrink-0 w-[112px]">
       <ActionEllipsis />
     </div>
   );
@@ -325,24 +393,62 @@ export function MainContent() {
   const [prompt, setPrompt] = useState("");
   const isRunReady = prompt.trim().length > 0;
 
-  const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
+  const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(
+    () => new Set(tableData.filter((row) => row.chevron !== null).map((row) => row.id)),
+  );
+  const [expandingGroups, setExpandingGroups] = useState<Set<string>>(new Set());
+  const expandingTimersRef = useRef<Record<string, number>>({});
+
+  useEffect(() => {
+    return () => {
+      Object.values(expandingTimersRef.current).forEach((timerId) => window.clearTimeout(timerId));
+    };
+  }, []);
+
   const toggleGroup = (groupId: string) => {
     setCollapsedGroups((prev) => {
       const next = new Set(prev);
-      if (next.has(groupId)) next.delete(groupId);
-      else next.add(groupId);
+      if (next.has(groupId)) {
+        next.delete(groupId);
+        setExpandingGroups((prevExpanding) => {
+          const expanding = new Set(prevExpanding);
+          expanding.add(groupId);
+          return expanding;
+        });
+        const existingTimer = expandingTimersRef.current[groupId];
+        if (existingTimer) window.clearTimeout(existingTimer);
+        expandingTimersRef.current[groupId] = window.setTimeout(() => {
+          setExpandingGroups((prevExpanding) => {
+            const expanding = new Set(prevExpanding);
+            expanding.delete(groupId);
+            return expanding;
+          });
+          delete expandingTimersRef.current[groupId];
+        }, 240);
+      } else {
+        next.add(groupId);
+        setExpandingGroups((prevExpanding) => {
+          const expanding = new Set(prevExpanding);
+          expanding.delete(groupId);
+          return expanding;
+        });
+      }
       return next;
     });
   };
 
-  const visibleRows = tableData.filter((row, i) => {
-    if (!row.indent) return true;
+  const rowsWithMeta = tableData.map((row, i) => {
+    if (!row.indent) return { ...row, parentCollapsed: false, parentGroupId: null as string | null };
     for (let j = i - 1; j >= 0; j--) {
       if (tableData[j].chevron !== null) {
-        return !collapsedGroups.has(tableData[j].id);
+        return {
+          ...row,
+          parentCollapsed: collapsedGroups.has(tableData[j].id),
+          parentGroupId: tableData[j].id,
+        };
       }
     }
-    return true;
+    return { ...row, parentCollapsed: false, parentGroupId: null as string | null };
   });
 
   return (
@@ -648,14 +754,9 @@ export function MainContent() {
                         <p className="leading-none overflow-hidden">Name</p>
                       </div>
                     </div>
-                    <div className="content-stretch flex items-center relative shrink-0 w-[144px]">
+                    <div className="content-stretch flex items-center relative shrink-0 w-[176px]">
                       <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
                         <p className="leading-none overflow-hidden">Agent</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex items-center relative shrink-0 w-[96px]">
-                      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-                        <p className="leading-none overflow-hidden">Model</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-[144px]">
@@ -679,16 +780,29 @@ export function MainContent() {
                         <p className="leading-none overflow-hidden">Status</p>
                       </div>
                     </div>
-                    <div className="h-[12px] shrink-0 w-[140px]" />
+                    <div className="content-stretch flex items-center relative shrink-0 w-[96px]">
+                      <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#737373] text-[12px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+                        <p className="leading-none overflow-hidden">Model</p>
+                      </div>
+                    </div>
+                    <div className="h-[12px] shrink-0 w-[112px]" />
                   </div>
                 </div>
                 <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
               </div>
 
               {/* Data rows */}
-              {visibleRows.map((row) => (
-                <div key={row.id} className="relative shrink-0 w-full hover:bg-[#0f0f0f] cursor-pointer transition-colors">
+              {rowsWithMeta.map((row) => {
+                const isGroupParentExpanded = row.chevron !== null && !collapsedGroups.has(row.id);
+                const showGroupBorder = isGroupParentExpanded || (row.indent && !row.parentCollapsed);
+                const rowContent = (
+                <div key={row.id} className="relative shrink-0 w-full hover:bg-[#141414] cursor-pointer transition-colors">
                   <div aria-hidden="true" className="absolute border-[#171717] border-b border-solid inset-0 pointer-events-none" />
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-y-0 left-0 w-[5px] bg-[#262626] pointer-events-none"
+                    style={{ opacity: showGroupBorder ? 1 : 0, transition: "opacity 220ms ease" }}
+                  />
                   <div className="flex flex-row items-center size-full">
                     <div className="content-stretch flex items-center px-[20px] py-[12px] relative w-full">
                       {/* Name cell */}
@@ -700,7 +814,7 @@ export function MainContent() {
                               <div className="content-stretch flex flex-[1_0_0] gap-[6px] items-center min-h-px min-w-px relative">
                                 {/* Chevron button */}
                                 <div
-                                  className="content-stretch flex gap-[8px] items-center justify-center px-[10px] py-[8px] relative rounded-[8px] shrink-0 size-[26px] hover:bg-[#1f1f1f] transition-colors cursor-pointer"
+                                  className="content-stretch flex gap-[8px] items-center justify-center px-[10px] py-[8px] relative rounded-[8px] shrink-0 size-[26px] hover:bg-[#404040] transition-colors cursor-pointer"
                                   onClick={(e) => { e.stopPropagation(); toggleGroup(row.id); }}
                                 >
                                   <div className={`flex items-center justify-center relative shrink-0 size-[16px] transition-transform duration-150 ${collapsedGroups.has(row.id) ? "-rotate-90" : ""}`}>
@@ -711,33 +825,31 @@ export function MainContent() {
                                     </div>
                                   </div>
                                 </div>
-                                <WithTooltip title={row.name} className="flex-[1_0_0] min-h-px min-w-px">
+                                <div className="flex-[1_0_0] min-h-px min-w-px">
                                   <div className="flex flex-row items-center size-full">
                                     <div className="content-stretch flex items-center pr-[10px] relative w-full">
-                                      <div className="flex-[1_0_0] font-['SF_Pro:Regular',sans-serif] font-normal leading-none min-w-0 overflow-hidden text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-                                        {row.name}
-                                      </div>
+                                      <TruncatedTitle
+                                        title={row.name}
+                                        className="flex-[1_0_0] min-w-0"
+                                        textClassName="flex-[1_0_0] font-['SF_Pro:Regular',sans-serif] font-normal leading-none min-w-0 overflow-hidden text-[#f5f5f5] text-[14px] text-ellipsis whitespace-nowrap"
+                                      />
                                     </div>
                                   </div>
-                                </WithTooltip>
+                                </div>
                               </div>
                             ) : (
-                              <WithTooltip title={row.name} className="flex-[1_0_0] min-w-0">
-                              <p className="font-['SF_Pro:Regular',sans-serif] font-normal leading-none text-[#f5f5f5] text-[14px] overflow-hidden text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>{row.name}</p>
-                            </WithTooltip>
+                              <TruncatedTitle
+                                title={row.name}
+                                className="flex-[1_0_0] min-w-0"
+                                textClassName="font-['SF_Pro:Regular',sans-serif] font-normal leading-none text-[#f5f5f5] text-[14px] overflow-hidden text-ellipsis whitespace-nowrap"
+                              />
                             )}
                           </div>
                         </div>
                       </div>
                       {/* Agent cell */}
-                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[144px]">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[176px]">
                         <AgentBadge agent={row.agent} iconType={row.agentIconType} />
-                      </div>
-                      {/* Model cell */}
-                      <div className="content-stretch flex items-center relative shrink-0 w-[96px]">
-                        <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-                          <p className="leading-[20px] overflow-hidden">{row.model}</p>
-                        </div>
                       </div>
                       {/* Created cell */}
                       <div className="content-stretch flex items-center relative shrink-0 w-[144px]">
@@ -749,12 +861,39 @@ export function MainContent() {
                       <div className="content-stretch flex flex-col items-start pr-[12px] relative shrink-0 w-[256px]">
                         <StatusBadge status={row.status} />
                       </div>
+                      {/* Model cell */}
+                      <div className="content-stretch flex items-center relative shrink-0 w-[96px]">
+                        <div className="flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[#a3a3a3] text-[14px] text-ellipsis whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+                          <p className="leading-[20px] overflow-hidden">{row.model}</p>
+                        </div>
+                      </div>
                       {/* Actions cell */}
                       <RowActions variant={row.actions} />
                     </div>
                   </div>
                 </div>
-              ))}
+                );
+
+                if (row.indent) {
+                  const isAnimatingExpand = row.parentGroupId !== null && expandingGroups.has(row.parentGroupId);
+                  return (
+                    <div
+                      key={row.id}
+                      style={{
+                        maxHeight: row.parentCollapsed ? "0px" : "80px",
+                        overflow: row.parentCollapsed || isAnimatingExpand ? "hidden" : "visible",
+                        opacity: row.parentCollapsed ? 0 : 1,
+                        transition: "max-height 220ms ease, opacity 180ms ease",
+                        width: "100%",
+                      }}
+                    >
+                      {rowContent}
+                    </div>
+                  );
+                }
+
+                return rowContent;
+              })}
             </div>
             <div aria-hidden="true" className="absolute border border-[#171717] border-solid inset-0 pointer-events-none rounded-[12px]" />
           </div>
