@@ -301,7 +301,7 @@ function IconButton({ children, label }: { children: ReactNode; label: string })
           {children}
         </div>
       </div>
-      <div className="absolute left-full ml-[10px] top-1/2 -translate-y-1/2 z-[60] pointer-events-none rounded-[6px] bg-[var(--neutral-700)] px-[12px] py-[10px] font-['SF_Pro:Regular',sans-serif] font-normal text-[var(--neutral-200)] text-[12px] leading-[16px] whitespace-nowrap opacity-0 -translate-x-[4px] transition-all duration-150 group-hover:opacity-100 group-hover:translate-x-0">
+      <div className="absolute left-full ml-[10px] top-1/2 -translate-y-1/2 z-[60] pointer-events-none rounded-[8px] bg-[var(--neutral-700)] px-[12px] py-[8px] font-['SF_Pro:Regular',sans-serif] font-normal text-[var(--neutral-200)] text-[12px] leading-[16px] whitespace-nowrap opacity-0 -translate-x-[4px] transition-all duration-150 group-hover:opacity-100 group-hover:translate-x-0">
         {label}
       </div>
     </div>

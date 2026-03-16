@@ -192,21 +192,23 @@ function WithTooltip({
   subtitle,
   className,
   disabled = false,
+  centerText = false,
 }: {
   children: React.ReactNode;
   title: string;
   subtitle?: string;
   className?: string;
   disabled?: boolean;
+  centerText?: boolean;
 }) {
   return (
     <div className={`relative group/tooltip${className ? ` ${className}` : ""}`}>
       {children}
-      <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-[8px] z-50 transition-opacity duration-150 pointer-events-none ${disabled ? "hidden" : "opacity-0 group-hover/tooltip:opacity-100"}`}>
-        <div className="bg-[#1c1c1c] border border-[#333333] rounded-[8px] px-[10px] py-[8px] flex flex-col gap-[3px] whitespace-nowrap shadow-[0_4px_16px_rgba(0,0,0,0.5)]">
-          <span className="font-['SF_Pro:Regular',sans-serif] text-[12px] leading-none text-[#e5e5e5]" style={{ fontVariationSettings: "'wdth' 100" }}>{title}</span>
+      <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-[8px] z-50 pointer-events-none transition-all duration-150 ${disabled ? "hidden" : "opacity-0 -translate-y-[4px] group-hover/tooltip:opacity-100 group-hover/tooltip:translate-y-0"}`}>
+        <div className={`bg-[var(--neutral-700)] rounded-[8px] px-[12px] py-[8px] flex flex-col gap-[3px] whitespace-nowrap ${centerText ? "items-center text-center" : ""}`}>
+          <span className="font-['SF_Pro:Regular',sans-serif] font-normal text-[12px] leading-[16px] text-[var(--neutral-200)]" style={{ fontVariationSettings: "'wdth' 100" }}>{title}</span>
           {subtitle && (
-            <span className="font-['SF_Pro:Regular',sans-serif] text-[11px] leading-none text-[#525252]" style={{ fontVariationSettings: "'wdth' 100" }}>{subtitle}</span>
+            <span className="font-['SF_Pro:Regular',sans-serif] font-normal text-[11px] leading-[14px] text-[var(--neutral-400)]" style={{ fontVariationSettings: "'wdth' 100" }}>{subtitle}</span>
           )}
         </div>
       </div>
@@ -269,8 +271,8 @@ function TruncatedTitle({
 
 function ActionTicketCheck() {
   return (
-    <WithTooltip title="Go to the ticket" subtitle="T-0004292">
-      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+    <WithTooltip title="Go to the ticket" subtitle="T-0004292" centerText>
+      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer">
         <div className="overflow-clip relative shrink-0 size-[16px]">
           <div className="absolute inset-[20.83%_8.33%]">
             <div className="absolute inset-[-7.13%_-4.99%_-7.12%_-4.99%]">
@@ -287,8 +289,8 @@ function ActionTicketCheck() {
 
 function ActionBook() {
   return (
-    <WithTooltip title="Go to the repository" subtitle="universityofnicosia/evolve-monorepo">
-      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+    <WithTooltip title="Go to the repository" subtitle="universityofnicosia/evolve-monorepo" centerText>
+      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer">
         <div className="overflow-clip relative shrink-0 size-[16px]">
           <div className="absolute inset-[8.33%_16.67%]">
             <div className="absolute inset-[-4.99%_-6.23%]">
@@ -305,23 +307,21 @@ function ActionBook() {
 
 function ActionEllipsis() {
   return (
-    <WithTooltip title="More">
-      <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
-        <div className="overflow-clip relative shrink-0 size-[16px]">
-          <div className="absolute inset-[45.83%_16.67%]">
-            <div className="absolute inset-[-49.88%_-6.23%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
-                <g>
-                  <path d={svgTablePaths.p21d13c00} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                  <path d={svgTablePaths.p10de4900} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                  <path d={svgTablePaths.p1fd94400} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
-                </g>
-              </svg>
-            </div>
+    <div className="content-stretch flex items-center p-[8px] relative shrink-0 cursor-pointer">
+      <div className="overflow-clip relative shrink-0 size-[16px]">
+        <div className="absolute inset-[45.83%_16.67%]">
+          <div className="absolute inset-[-49.88%_-6.23%]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9967 2.66333">
+              <g>
+                <path d={svgTablePaths.p21d13c00} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgTablePaths.p10de4900} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+                <path d={svgTablePaths.p1fd94400} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33" />
+              </g>
+            </svg>
           </div>
         </div>
       </div>
-    </WithTooltip>
+    </div>
   );
 }
 
@@ -520,7 +520,7 @@ export function MainContent() {
                                 <div className="absolute inset-[20.83%]">
                                   <div className="absolute inset-[-5.89%]">
                                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.4333 10.4333">
-                                      <path d={svgPaths.p3dd52ee0} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                      <path d={svgPaths.p3dd52ee0} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                                     </svg>
                                   </div>
                                 </div>
@@ -535,7 +535,7 @@ export function MainContent() {
                                 <div className="absolute inset-[16.67%]">
                                   <div className="absolute inset-[-5.16%]">
                                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.7668 11.7668">
-                                      <path d={svgPaths.p2bc84680} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                      <path d={svgPaths.p2bc84680} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                                     </svg>
                                   </div>
                                 </div>
@@ -550,7 +550,7 @@ export function MainContent() {
                                 <div className="absolute inset-[8.33%_12.5%]">
                                   <div className="absolute inset-[-4.13%_-4.58%]">
                                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.1 14.4333">
-                                      <path d={svgPaths.p1fca9800} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                      <path d={svgPaths.p1fca9800} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                                     </svg>
                                   </div>
                                 </div>
@@ -566,9 +566,9 @@ export function MainContent() {
                                   <div className="absolute inset-[-5.16%_-41.25%]">
                                     <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2.43333 11.7667">
                                       <g>
-                                        <path d={svgPaths.pbb62180} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                                        <path d={svgPaths.pb439b80} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
-                                        <path d={svgPaths.p1c7be500} stroke="var(--neutral-300)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                        <path d={svgPaths.pbb62180} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                        <path d={svgPaths.pb439b80} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
+                                        <path d={svgPaths.p1c7be500} stroke="#A3A3A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" />
                                       </g>
                                     </svg>
                                   </div>
